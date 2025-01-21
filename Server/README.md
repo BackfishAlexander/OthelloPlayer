@@ -4,6 +4,9 @@ Welcome to this year's Atomic Accelerator challenge. You'll be creating a bot to
 
 To begin, clone this repository.
 
+## Start Script
+
+I have included a `start.sh` bash script that will quickly run the server with the following settings: `--p2-type random --max-turn-time 60000` 
 ## Usage
 
 To run the game, you'll need a recent Java VM (we recommend Java 17). Use a terminal/command line tool to invoke the game:

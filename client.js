@@ -13,7 +13,8 @@ client.connect(args[0] || defaultPort, args[1] || defaultHost, () => {
 
 client.on('close', () => {
   console.log('Connection closed.');
-});
+  });
+
 
 client.on('error', (error) => {
   console.log(`Error: ${error.toString()}`);
