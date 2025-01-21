@@ -1,5 +1,5 @@
 // How many moves deep the algorithm analyzes (Not optimized for more than 9)
-const MAX_DEPTH = 9;
+let MAX_DEPTH = null;
 
 
 //Lists each possible direction
@@ -17,10 +17,12 @@ const calculatedMoves = new Map();
   *
   * @param {string} player
   * @param {board}  board
+  * @param int      max_depth - How many recursive iterations of minimax are allowed
   *
   * @return [x, y]
 */
-function getMove(player, board) {
+function getMove(player, board, max_depth) {
+  MAX_DEPTH = max_depth;
   const moves = getPossibleMoves(board, player);
   let bestMove = null;
   let bestScore = -Infinity;

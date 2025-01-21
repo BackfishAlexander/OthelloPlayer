@@ -8,11 +8,14 @@ First, start the server:
     ./start.sh
 
 Now, make sure you have the required npm package(s) installed: `npm install`
- - To run the client: `node client.js [optional port] [optional hostname]`
+ - To run the client: `node client.js [optional max_depth] [optional port] [optional hostname]`
 
  - To run my custom benchmark: `node benchmark.js`
 
  - To run tests: `npm run test`
+
+> **Note**
+> If your system struggles to run the algorithm, try running max_depth lower than it's default of 9
 
 ## Benchmark 🧪
 Connects to the server with a client repeatedly. Keeps track of how many games the bot Wins VS Loses VS Ties 
